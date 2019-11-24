@@ -1,0 +1,1 @@
+% ghc --make Test.hs -o test.exe 
