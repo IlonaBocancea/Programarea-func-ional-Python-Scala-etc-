@@ -1,10 +1,7 @@
 module Demo where
 
-roots :: Double -> Double -> Double
-	-> (Double, Double)
-roots a b c =
-  (
-     (-b - sqrt (b ^ 2 - 4 * a * c)) /(2 * a)
-  '
-     (-b + sqrt (b ^ 2 - 4 * a * c)) /(2 * a)
-)
+factorial n = if n == 0 then 1 else n * factorial (n - 1)
+
+factorial' 0=1
+factorial' n = n * factorial' (n - 1)
+
